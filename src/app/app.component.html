@@ -1,0 +1,19 @@
+<app-header></app-header>
+
+
+<div>
+  <nav mat-tab-nav-bar>
+    <mat-button mat-tab-link routerLink="/home"> home </mat-button>
+    <mat-button mat-tab-link routerLink="/menu"> menu </mat-button>
+    <mat-button mat-tab-link routerLink="/sides"> sides </mat-button>
+    <span class="align-right">
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon routerLink="/shoppingCart" matBadge="{{cartItemsCount}}" matBadgeColor="warn">shopping_cart</mat-icon>
+    </button>
+  </span>
+  </nav>
+
+</div>
+<router-outlet></router-outlet>
+
+<app-footer></app-footer>
